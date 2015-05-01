@@ -1,22 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class isDamagable : MonoBehaviour {
+public interface isDamagable {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
-	void RecieveDamage (int damage){
-	}
+	void RecieveDamage (int damage);
 
-	void Die(){
-	}
+	void Die ();
 
 }

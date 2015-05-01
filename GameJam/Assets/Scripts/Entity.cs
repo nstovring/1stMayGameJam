@@ -22,7 +22,10 @@ public class Entity : MonoBehaviour {
 		
 	}
 
-	void move();
+	void move(){
+	}
 
-	void attack();
+	void attack(){
+
+	}
 }
