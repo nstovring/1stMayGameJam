@@ -8,12 +8,32 @@ public class Enemy : Entity {
 
 
 
-	
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
+	}
+
+	void move(){
+	}
+	
+	void attack(){
+		
+	}
+	
+	public void RecieveDamage (int damage){
+
+		health -= damage;
+
+		if (health <= 0) {
+			Die();
+		}
+
+	}
+	
+	public void Die (){
+		Destroy (this.gameObject); 
 	}
 
 

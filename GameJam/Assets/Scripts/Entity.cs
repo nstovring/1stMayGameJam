@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Entity : MonoBehaviour {
+public class Entity : MonoBehaviour, isDamagable {
 	
 	public int speed;
 	public int health;
@@ -23,10 +23,22 @@ public class Entity : MonoBehaviour {
 	}
 
 	void move(){
+<<<<<<< HEAD
 
 	}
 
 	void attack(){
 
 	}
+=======
+	}
+
+	void attack(){
+
+	}
+
+	public void RecieveDamage (int damage){}
+	
+	public void Die (){}
+>>>>>>> origin/master
 }
