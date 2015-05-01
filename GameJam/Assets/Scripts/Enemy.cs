@@ -26,6 +26,8 @@ public class Enemy : Entity {
 
 		health -= damage;
 
+		transform.GetComponent<followTarget>().Bounce();
+
 		if (health <= 0) {
 			Die();
 		}

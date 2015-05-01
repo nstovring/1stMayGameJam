@@ -1,24 +1,15 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Entity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\followTarget.cs">
     <Files>
-      <File FileName="Assets\Spawner.cs" Line="7" Column="18" />
-      <File FileName="Assets\Rotate.cs" Line="14" Column="1" />
+      <File FileName="Assets\Spawner.cs" Line="7" Column="12" />
+      <File FileName="Assets\Rotate.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\isDamagable.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Enemy.cs" Line="21" Column="1" />
-      <File FileName="Assets\Scripts\Player.cs" Line="4" Column="23" />
-      <File FileName="Assets\Scripts\Entity.cs" Line="33" Column="3" />
-=======
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Enemy.cs">
-    <Files>
-      <File FileName="Assets\Scripts\WithingRange.cs" Line="11" Column="2" />
-      <File FileName="Assets\Scripts\Player.cs" Line="18" Column="1" />
-      <File FileName="Assets\Scripts\isDamagable.cs" Line="1" Column="1" />
-      <File FileName="Assets\Spawner.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Enemy.cs" Line="37" Column="3" />
-      <File FileName="Assets\Scripts\Entity.cs" Line="1" Column="1" />
->>>>>>> origin/master
+      <File FileName="Assets\Scripts\Enemy.cs" Line="29" Column="51" />
+      <File FileName="Assets\Scripts\Player.cs" Line="30" Column="48" />
+      <File FileName="Assets\Scripts\Entity.cs" Line="37" Column="1" />
+      <File FileName="Assets\followTarget.cs" Line="34" Column="34" />
+      <File FileName="Assets\Scripts\WithingRange.cs" Line="26" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

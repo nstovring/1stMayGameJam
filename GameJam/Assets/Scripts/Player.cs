@@ -1,11 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-<<<<<<< HEAD
-public class Player :  Entity {
-=======
 public class Player : Entity {
->>>>>>> origin/master
 
 	// Use this for initialization
 	void Start () {
@@ -27,11 +23,11 @@ public class Player : Entity {
 		//Enemy hits
 		if (other.gameObject.tag == "Enemy"){
 
-			Rigidbody enemeyBody = other.transform.GetComponent<Rigidbody>();
+			//Rigidbody enemeyBody = other.transform.GetComponent<Rigidbody>();
 			
-			enemeyBody.AddForce( new Vector3(100000,0,100000));
+			//enemeyBody.AddForce(enemeyBody.velocity * -100);
 
-			other.transform.GetComponent<Enemy>().RecieveDamage(this.damage);
+			//other.transform.GetComponent<Enemy>().RecieveDamage(this.damage);
 
 			//enemeyBody.velocity * -1
 

@@ -21,9 +21,10 @@ public class WithingRange : MonoBehaviour {
 
 		if (other.gameObject.tag == "Enemy" && Input.GetKeyUp(KeyCode.Space)){
 
-			Rigidbody enemeyBody = other.transform.GetComponent<Rigidbody>();
+			//Rigidbody enemeyBody = other.transform.GetComponent<Rigidbody>();
 
-			enemeyBody.AddForce( new Vector3(100,0,100));
+			//enemeyBody.AddForce(Vector3.up * 10);
+			//enemeyBody.velocity = enemeyBody.velocity*-10;
 			
 			other.transform.GetComponent<Enemy>().RecieveDamage(dmg);
 

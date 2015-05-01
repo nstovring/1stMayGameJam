@@ -23,15 +23,9 @@ public class Entity : MonoBehaviour, isDamagable {
 	}
 
 	void move(){
-<<<<<<< HEAD
 
 	}
 
-	void attack(){
-
-	}
-=======
-	}
 
 	void attack(){
 
@@ -40,5 +34,4 @@ public class Entity : MonoBehaviour, isDamagable {
 	public void RecieveDamage (int damage){}
 	
 	public void Die (){}
->>>>>>> origin/master
 }
