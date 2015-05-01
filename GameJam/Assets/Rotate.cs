@@ -11,7 +11,7 @@ public class Rotate : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position.x =
+		transform.position.Set(Random.Range(-10.0F, -5.0F),10f,0f);
 		transform.RotateAround(Vector3.zero, Vector3.up, speed * Time.deltaTime);
 	}
 }

@@ -15,6 +15,7 @@ public class Spawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		transform.position.Set(Random.Range(-10.0F, -5.0F),10f,0f);
+
 	}
 }
