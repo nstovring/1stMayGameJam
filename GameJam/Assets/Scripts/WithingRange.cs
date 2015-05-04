@@ -22,7 +22,9 @@ public class WithingRange : MonoBehaviour {
 		if (other.gameObject.tag == "Enemy" && Input.GetKeyUp(KeyCode.Space)){
 
 			//Rigidbody enemeyBody = other.transform.GetComponent<Rigidbody>();
+			AudioClip clip =GetComponent<AudioSource>().clip;
 
+			GetComponent<AudioSource>().PlayOneShot(clip);
 			//enemeyBody.AddForce(Vector3.up * 10);
 			//enemeyBody.velocity = enemeyBody.velocity*-10;
 			

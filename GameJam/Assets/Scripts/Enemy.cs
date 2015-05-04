@@ -27,7 +27,9 @@ public class Enemy : Entity {
 		health -= damage;
 
 		transform.GetComponent<followTarget>().Bounce();
-
+		AudioClip clip =GetComponent<AudioSource>().clip;
+		
+		GetComponent<AudioSource>().PlayOneShot(clip);
 		if (health <= 0) {
 			Die();
 		}

@@ -2,17 +2,18 @@
 using System.Collections;
 
 public class Spawner : MonoBehaviour {
-
+	
 	float spawnRate = 10f;
 	float spawnTimer;
-	public GameObject enemyPrefab;
+	public Sprite [] enemies;
 	public GameObject playerPrefab;
-
+	public GameObject enemyPrefab;
+	
 	Vector3 position;
-
+	
 	// Use this for initialization
 	void Start () {
-	
+		
 	}
 	
 	// Update is called once per frame
@@ -24,8 +25,10 @@ public class Spawner : MonoBehaviour {
 			spawnRate = 0;
 		}
 	}
-
+	
 	void SpawnEnemy(){
-		Instantiate(enemyPrefab,transform.position,Quaternion.identity);
+		GameObject clone =Instantiate(enemyPrefab,transform.position,Quaternion.identity) as GameObject;
+		clone.transform.GetComponent<SpriteRenderer> ().sprite = enemies [Random.Range (0, enemies.Length)];
+		
 	}
 }

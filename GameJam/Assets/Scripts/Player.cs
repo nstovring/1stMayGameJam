@@ -22,25 +22,25 @@ public class Player : Entity {
 		
 		//Enemy hits
 		if (other.gameObject.tag == "Enemy"){
-
-			//Rigidbody enemeyBody = other.transform.GetComponent<Rigidbody>();
 			
-			//enemeyBody.AddForce(enemeyBody.velocity * -100);
-
-			//other.transform.GetComponent<Enemy>().RecieveDamage(this.damage);
-
-			//enemeyBody.velocity * -1
-
-			//Destroy(other.gameObject); //will kill what hits
+			RecieveDamage(2);
 			
-			/*
-			Destroy(gameObject); //will kill us
-			Application.LoadLevel(0); //restarts game
-			Application.LoadLevel(Application.loadedLevel);//will restart level
-			Application.Quit(); //stops game
-
-			*/
 		}
-
+		
+	}
+	
+	
+	void RecieveDamage (int damage){
+		health -= damage;
+		
+		if (health <= 0) {
+			Die();
+		}
+	}
+	
+	void Die (){
+		
+		Application.LoadLevel(0); //restarts game
+		
 	}
 }
