@@ -2,43 +2,23 @@
 using System.Collections;
 
 public class Enemy : Entity {
+	public bool isDead = false;
+	public bool soundEnabled = false;
+	bool isAttacking;
+	public EnemyMotor enemyMotor;
 
-	// Use this for initialization
-	void Start () {
-
-
-
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
-	void move(){
-	}
-	
-	void attack(){
-		
-	}
-	
-	public void RecieveDamage (int damage){
-
+	new public void RecieveDamage (int damage){
 		health -= damage;
-
-		transform.GetComponent<followTarget>().Bounce();
+		transform.GetComponent<EnemyMotor>().Bounce();
+		if(soundEnabled){
 		AudioClip clip =GetComponent<AudioSource>().clip;
-		
 		GetComponent<AudioSource>().PlayOneShot(clip);
+		}
 		if (health <= 0) {
 			Die();
 		}
-
 	}
-	
-	public void Die (){
-		Destroy (this.gameObject); 
+	new public void Die (){
+		isDead = true;
 	}
-
-
 }

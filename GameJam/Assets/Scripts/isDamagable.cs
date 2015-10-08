@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public interface isDamagable {
-
-
+public interface IDamagable {
 	void RecieveDamage (int damage);
-
-	void Die ();
-
 }
+
+public interface IKillable {
+	void Die ();
+}
+
+

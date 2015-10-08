@@ -1,26 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Entity : MonoBehaviour, isDamagable {
+public class Entity : MonoBehaviour, IDamagable, IKillable {
 	
-	public int speed;
+	public float speed;
 	public int health;
 	public int damage;
-	public int range;
-	
-	
-	// Use this for initialization
-	void Start () {
-	
-
-	}
-	
-	// Update is called once per frame
-	void Update () {
-
-
-		
-	}
+	public int attackRange;
 
 	void move(){
 

@@ -3,34 +3,22 @@ using System.Collections;
 
 public class Player : Entity {
 
+	public bool immortal = false;
 	// Use this for initialization
 	void Start () {
 	
 	}
 	
 	// Update is called once per frame
-	void FixedUpdate () {
-
-		GetComponent<Rigidbody>().velocity = new Vector3(Input.GetAxis("Horizontal"),0,Input.GetAxis("Vertical"))* speed;
-	
-	}
-
-
-
 	void OnCollisionEnter(Collision other ){
-		
-		
 		//Enemy hits
-		if (other.gameObject.tag == "Enemy"){
-			
+		if (other.gameObject.tag == "Enemy" && !immortal){
 			RecieveDamage(2);
-			
 		}
 		
 	}
 	
-	
-	void RecieveDamage (int damage){
+	new void RecieveDamage (int damage){
 		health -= damage;
 		
 		if (health <= 0) {
@@ -38,9 +26,7 @@ public class Player : Entity {
 		}
 	}
 	
-	void Die (){
-		
+	new void Die (){
 		Application.LoadLevel(0); //restarts game
-		
 	}
 }
